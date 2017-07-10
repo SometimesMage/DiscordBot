@@ -45,6 +45,7 @@ emitter.on('command', (cmd, msg) => {
 
     let color = 0x19d379;
     let thumbnail = member.user.avatarURL ? member.user.avatarURL : member.user.defaultAvatarURL;
+    let footer = msg.client.user.username;
     let footerThumbnail = msg.client.user.avatarURL ? msg.client.user.avatarURL : msg.client.user.defaultAvatarURL;
     let username = member.nickname ? member.nickname : member.user.username;
     let gameTitle = 'Playing:';
@@ -72,7 +73,7 @@ emitter.on('command', (cmd, msg) => {
     let embed = new Discord.RichEmbed()
         .setColor(color)
         .setThumbnail(thumbnail)
-        .setFooter('MageEssentails', footerThumbnail)
+        .setFooter(footer, footerThumbnail)
         .setTimestamp()
         .addField('User:', username, true)
         .addField(gameTitle, game, true)
