@@ -1,0 +1,22 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "A bot for Discord.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SometimesMage/DiscordBot.git"
+  },
+  "author": "SometimesMage",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SometimesMage/DiscordBot/issues"
+  },
+  "homepage": "https://github.com/SometimesMage/DiscordBot#readme",
+  "dependencies": {
+    "node-opus": "^0.2.6"
+  }
+}
