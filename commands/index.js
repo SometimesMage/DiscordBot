@@ -16,4 +16,3 @@ require('./roll');
 require('./join');
 require('./leave');
 require('./taunt');
-require('./merica');
