@@ -18,6 +18,9 @@ emitter.on('command', (cmd, msg) => {
         case 'embed':
             handleEmbed(command, msg);
             break;
+        case 'sound':
+            handleSound(command, msg);
+            break;
     }
 });
 
@@ -46,4 +49,18 @@ function handleEmbed(cmd, msg) {
     }
 
     msg.channel.send(cmd.content);
+}
+
+function handleSound(cmd, msg) {
+    if(!cmd.content) {
+        console.error('Could\'t find a content property!');
+        return;
+    }
+
+    if(!msg.member.voiceChannel) {
+        msg.reply('you are not currently in a voice channel!');
+        return;
+    }
+
+    audio.queueFile(msg.member.voiceChannel, cmd.content);
 }
