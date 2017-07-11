@@ -11,7 +11,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
     if(msg.channel instanceof Discord.DMChannel || msg.channel instanceof Discord.GroupDMChannel) {
-        console.log('Private Message Recieved and ignored!');
+        console.log('Private message recieved and ignored!');
         return;
     }
 
@@ -23,6 +23,8 @@ client.on('message', msg => {
 });
 
 client.login(config.client.token);
+
+module.exports = client;
 
 //Console Input Handling
 

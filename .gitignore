@@ -1,5 +1,8 @@
 #Project Specific
 config.js
+commands/test.js
+sounds/
+taunts/
 
 # Logs
 logs

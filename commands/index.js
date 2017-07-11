@@ -5,7 +5,7 @@ const commandEmitter = new events.EventEmitter();
 
 commandEmitter.on('command', (cmd, msg) => {
     let name = msg.member.nickname ? msg.member.nickname : msg.member.user.username;
-    console.log(`${name} issued ${commandPrefix}${cmd} command.`);
+    console.log(`[${msg.guild.name}] ${name} issued ${commandPrefix}${cmd} command.`);
 });
 
 module.exports.emitter = commandEmitter;
@@ -13,3 +13,7 @@ module.exports.emitter = commandEmitter;
 require('./userinfo');
 require('./custom');
 require('./roll');
+require('./join');
+require('./leave');
+require('./taunt');
+require('./merica');
