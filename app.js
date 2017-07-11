@@ -10,6 +10,11 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
+    if(msg.channel instanceof Discord.DMChannel || msg.channel instanceof Discord.GroupDMChannel) {
+        console.log('Private Message Recieved and ignored!');
+        return;
+    }
+
     if(msg.content.startsWith(config.command.prefix)) {
         let cmd = msg.content.split(" ")[0];
         cmd = cmd.substr(1, cmd.length);

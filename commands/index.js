@@ -1,3 +1,4 @@
+const Discord = require('discord.js');
 const events = require('events');
 const commandPrefix = require('../config').command.prefix;
 const commandEmitter = new events.EventEmitter();
@@ -11,3 +12,4 @@ module.exports.emitter = commandEmitter;
 
 require('./userinfo');
 require('./custom');
+require('./roll');
