@@ -15,5 +15,5 @@ emitter.on('command', (cmd, msg) => {
     }
 
     let ran = Math.floor(Math.random() * filenames.length);
-    audio.queueTaunt(msg.member.voiceChannel, filenames[ran]);
+    audio.queueTaunt(msg.guild.id, msg.member.voiceChannel, filenames[ran]);
 })

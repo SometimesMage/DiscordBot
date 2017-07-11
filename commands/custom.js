@@ -63,5 +63,5 @@ function handleSound(cmd, msg) {
         return;
     }
 
-    audio.queueFile(msg.member.voiceChannel, cmd.content);
+    audio.queueFile(msg.guild.id, msg.member.voiceChannel, cmd.content);
 }
