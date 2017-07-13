@@ -18,8 +18,12 @@
         },
         "embed" : {
             "type" : "embed",
-            "content" : "Check out https://cog-creators.github.io/discord-embed-sandbox/"
+            "content" : "Check out https://discordapp.com/developers/docs/resources/channel#embed-object"
         },
+        "embed2" : {
+            "type" : "embed",
+            "content" : 
+        }
         "sound" : {
             "type" : "sound",
             "content" : "sound.wav"
