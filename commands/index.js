@@ -15,5 +15,5 @@ const noralizedPath = require('path').resolve(__dirname);
 require('fs').readdirSync(noralizedPath).forEach(file => {
     if(file === 'index.js')
         return;
-    require(__dirname + '\\' + file);
+    require('./' + file);
 });
