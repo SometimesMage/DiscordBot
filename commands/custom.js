@@ -1,5 +1,5 @@
 const emitter = require('./index').emitter;
-const commands = require('../config').commands;
+const commands = require('../config.json').commands;
 const audio = require('../lib/audio');
 
 emitter.on('command', (cmd, msg) => {

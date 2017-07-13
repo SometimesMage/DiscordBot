@@ -1,0 +1,28 @@
+{
+    "client" : {
+        "token" : "YourTokenHere"
+    },
+    "command" : {
+        "prefix" : "/",
+        "soundFolder" : "D:/Code/DiscordBot/sounds/",
+        "tauntFolder" : "D:/Code/DiscordBot/taunts/"
+    },
+    "commands" : {
+        "ping" : {
+            "type" : "reply",
+            "content" : "pong!"
+        },
+        "text" : {
+            "type" : "text",
+            "content" : "A Text Response"
+        },
+        "embed" : {
+            "type" : "embed",
+            "content" : "Check out https://cog-creators.github.io/discord-embed-sandbox/"
+        },
+        "sound" : {
+            "type" : "sound",
+            "content" : "sound.wav"
+        }
+    }
+}

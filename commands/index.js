@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const events = require('events');
-const commandPrefix = require('../config').command.prefix;
+const commandPrefix = require('../config.json').command.prefix;
 const commandEmitter = new events.EventEmitter();
 
 commandEmitter.on('command', (cmd, msg) => {

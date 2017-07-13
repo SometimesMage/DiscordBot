@@ -11,6 +11,6 @@ emitter.on('command', (cmd, msg) => {
         return;
     }
 
-    audio.join(msg.member.voiceChannel);
+    audio.join(msg.member.guild, msg.member.voiceChannel);
     msg.reply('I joined your voice channel!');
 })

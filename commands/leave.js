@@ -6,7 +6,7 @@ emitter.on('command', (cmd, msg) => {
         return;
     }
 
-    if(audio.leave()) {
+    if(audio.leave(msg.member.guild)) {
         msg.reply('I left my voice channel!');
     } else {
         msg.reply('I am not in a voice channel!')
