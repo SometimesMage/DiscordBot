@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
-const emitter = require('./index').emitter;
+
+const emitter = require('./').emitter;
 
 const minuteInMillis = 1000 * 60;
 const hourInMillis = 60 * minuteInMillis;

@@ -1,4 +1,4 @@
-const emitter = require('./index').emitter;
+const emitter = require('./').emitter;
 const audio = require('../lib/audio');
 
 emitter.on('command', (cmd, msg) => {

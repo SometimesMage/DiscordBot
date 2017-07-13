@@ -1,4 +1,4 @@
-const emitter = require('./index').emitter;
+const emitter = require('./').emitter;
 
 emitter.on('command', (cmd, msg) => {
     if(cmd !== 'roll') {

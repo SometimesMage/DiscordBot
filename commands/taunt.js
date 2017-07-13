@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
-const emitter = require('./index').emitter;
+
+const emitter = require('./').emitter;
 const audio = require('../lib/audio');
 const filenames = fs.readdirSync(require('../config.json').command.tauntFolder);
 
