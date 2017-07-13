@@ -10,9 +10,17 @@ commandEmitter.on('command', (cmd, msg) => {
 
 module.exports.emitter = commandEmitter;
 
-require('./userinfo');
-require('./custom');
-require('./roll');
-require('./join');
-require('./leave');
-require('./taunt');
+const noralizedPath = require('path').resolve(__dirname);
+
+require('fs').readdirSync(noralizedPath).forEach(file => {
+    if(file === 'index.js')
+        return;
+    require(__dirname + '\\' + file);
+});
+
+// require('./userinfo');
+// require('./custom');
+// require('./roll');
+// require('./join');
+// require('./leave');
+// require('./taunt');
