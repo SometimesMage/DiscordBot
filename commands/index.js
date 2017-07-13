@@ -17,10 +17,3 @@ require('fs').readdirSync(noralizedPath).forEach(file => {
         return;
     require(__dirname + '\\' + file);
 });
-
-// require('./userinfo');
-// require('./custom');
-// require('./roll');
-// require('./join');
-// require('./leave');
-// require('./taunt');
